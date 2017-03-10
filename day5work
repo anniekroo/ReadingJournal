@@ -1,0 +1,112 @@
+def square(t):
+    import turtle
+    for i in range(4):
+        t.fd(100)
+        t.lt(90)
+def runBobRun ():
+    import turtle
+    bob = turtle.Turtle()
+    square(bob)
+    turtle.mainloop()
+#runBobRun()
+
+def square1(t, length):
+    import turtle
+    for i in range(4):
+        t.fd(length)
+        t.lt(90)
+def runBobRun1 (length):
+    import turtle
+    bob = turtle.Turtle()
+    square1(bob, length)
+    turtle.mainloop()
+#runBobRun1(100)
+
+def poly(t, length, sides):
+    import turtle
+    for i in range(sides):
+        t.fd(length)
+        t.lt((360/sides))
+def cBobRun(length, sides):
+    import turtle
+    bob = turtle.Turtle()
+    poly(bob, length, sides)
+    turtle.mainloop()
+#cBobRun(50,10)
+
+def circ(t, rad):
+    import turtle
+    import math
+    length = ((2*math.pi*rad)/360)
+    for i in range(360):
+        t.fd(length)
+        t.lt(1)
+def beBobAndRun(rad):
+    import turtle
+    bob = turtle.Turtle()
+    circ(bob, rad)
+    turtle.mainloop()
+#beBobAndRun(100)
+
+def arc(t, rad, arcL):
+    import turtle
+    import math
+    length = ((2*math.pi*rad)/360)
+    for i in range(arcL):
+        t.fd(length)
+        t.lt(1)
+def freeBob(rad, arcL):
+    import turtle
+    bob = turtle.Turtle()
+    arc(bob, rad, arcL)
+    turtle.mainloop()
+#freeBob (50, 360)
+
+def spiral(t):
+    import turtle
+    i = 0
+    while i < 10000:
+        length = ((2*3.14159*i)/360)
+        t.fd(length)
+        t.lt(25)
+        i = i + 100
+def spiralingOutOfControlBob ():
+    import turtle
+    bob = turtle.Turtle()
+    spiral(bob)
+    turtle.mainloop()
+spiralingOutOfControlBob()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# i hate programming at the bottom of my screen.
